@@ -1,0 +1,199 @@
+nav{
+
+    height: 50px;
+    border: solid 1px black;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar{
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    
+} 
+
+header img {
+    display: none;
+}
+.selected{
+    background: lightgray;
+    width: 200px;
+}
+
+.main {
+    display: flex;
+}
+h1{
+    text-align: center;
+}
+.user-div{
+    display: flex;
+}
+
+.user-image{
+    height: 50px;
+    width: 50px;
+}
+
+.new-post{
+    border: 2px solid black;
+    height: 600px;
+    width: 300px;
+}
+
+.news-feed{
+    border: 2px solid black;
+    height: 600px;
+    width: 600px;
+    margin: 0 10px;
+
+}
+
+.friends {
+    overflow: auto;
+    height: 200;
+    width: 150px;
+    border: 1px solid black;
+}
+
+td {
+    border-bottom: 1px solid black;
+    width: 150px;
+}
+
+.chat {
+    border: 2px solid black;
+    height: 550px;
+    width: 200px;
+    margin-top: 20px;
+    
+}
+
+h3 {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.chat, .news-feed, .new-post, aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+#search {
+    border-radius: 5px;
+    height: 30px;
+
+}
+
+aside {
+    padding: 0;
+}
+
+.new-post textarea {
+    width: 200px;
+}
+
+.send {
+    width: 150px;
+}
+
+.news-feed textarea {
+    width: 300px;
+}
+
+.news-feed button {
+    width: 200px;
+}
+
+.heart {
+    height: 30px;
+    width: 30px;
+    align-self: center;
+    
+}
+
+.comment-heart{
+    display: flex;
+}
+
+.friends-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.feed {
+    display: flex;
+    flex-grow: 1;
+    width: 550px;
+    justify-content: center;
+    position: relative;
+}
+
+#message-icon {
+    height: 40px;
+    width: 40px;
+    justify-self: flex-end;
+    position: absolute;
+    left: 500px;
+}
+@media (max-width:250px){
+    header img {
+        display: inline;
+        width: 30px;
+        height: 30px;
+    }
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 370px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav, #message-icon {
+        display: none;
+    }
+
+/*     #message-icon {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    } */
+
+    .new-post textarea, .news-feed textarea {
+        width: unset;
+    }
+
+    .news-feed, .chat {
+        height: unset;
+        width: 300px;
+        margin: 0;
+    }
+    
+    aside {
+        width: 300px;
+        padding-left: 22px;
+    }
+
+    .chat, .news-feed, .new-post, aside {
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    #search {
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 16px;
+    }
+}
+
